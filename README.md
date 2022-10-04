@@ -284,3 +284,28 @@ app.exec_()
 #### 5.5 ui界面
 
 ![1664857972611](C:\Users\jieliu666\AppData\Roaming\Typora\typora-user-images\1664857972611.png)
+
+## 06 windoiws平台打包可执行文件
+
+### 6.1 安装pyinstaller库
+
+```
+pip install pyinstaller  -i https://pypi.douban.com/simple --trusted-host pypi.douban.com
+```
+
+![1664867710826](C:\Users\jieliu666\AppData\Roaming\Typora\typora-user-images\1664867710826.png)
+
+### 6.2 找到python工程下输入cmd
+
+```
+1. cmd
+2. 打包方式1(exe)：pyinstaller py文件名 --noconsole --hidden-import PySide2.QtXml # 方式1
+2.打包方式2(exe+依赖)：pyinstaller -F httpclient.py --noconsole --hidden-import PySide2.QtXml
+```
+
+![1664865418360](C:\Users\jieliu666\AppData\Roaming\Typora\typora-user-images\1664865418360.png)
+
+![1664865761627](C:\Users\jieliu666\AppData\Roaming\Typora\typora-user-images\1664865761627.png)
+
+![1664865786881](C:\Users\jieliu666\AppData\Roaming\Typora\typora-user-images\1664865786881.png)
+
